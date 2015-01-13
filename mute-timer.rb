@@ -78,6 +78,6 @@ Plugin.create(:mute_timer) do
   end
 
   settings "mute timer" do
-    input "delay time (in seconds)", :mute_timer_delay_time
+    adjustment "delay time (in seconds)", :mute_timer_delay_time
   end
 end
