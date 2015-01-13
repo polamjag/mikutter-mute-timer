@@ -46,7 +46,6 @@ Plugin.create(:mute_timer) do
       muted.delete user
       UserConfig[:muted_users] = muted
     }
-    p UserConfig[:muted_users]
   end
 
   command(:mute_timer,
@@ -72,7 +71,6 @@ Plugin.create(:mute_timer) do
           q.delete_if do |i|
             i[:sn] == sn
           end
-          p q
           UserConfig[:mute_timer_queue] = q
         }
       }
